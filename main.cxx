@@ -100,6 +100,13 @@ void MoveImage(cv::VideoWriter & writer, const Image & base, const Image & move_
 	}
 }
 
+/*
+ *=======================================================================================
+ *PF2pfdistance関数
+ *二点間の距離を計算する関数
+ *=======================================================================================
+ */
 float PF2PFDistance(P2F p1, P2F p2){
 	return std::sqrt(std::pow(p1.x - p2.x, 2) + std::pow(p1.y - p2.y, 2));
 }
+
